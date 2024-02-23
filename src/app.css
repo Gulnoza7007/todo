@@ -1,0 +1,237 @@
+.todo {
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 40px 50px;
+    border: 1px solid rgb(111, 109, 99);
+    border-radius: 40px;
+    position: relative;
+    min-height: 80vh;
+}
+
+.colors {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.purple {
+    background-color: rgb(209, 206, 251);
+}
+.red {
+    background-color: rgb(247, 208, 207);
+}
+
+.green {
+    background-color: rgb(222, 241, 216);
+}
+
+.blue {
+    background-color: rgb(213, 228, 245);
+}
+.todo_list {
+    text-decoration: none;
+}
+
+ul {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+li p {
+    color: rgb(131, 130, 119);
+    font-size: 14px;
+    line-height: 170%;
+    margin: 0;
+}
+li {
+    display: flex;
+    border-radius: 10px;
+    margin-right: 24px;
+    transition: all 0.2s ease-in-out;
+    margin-left: -10px;
+}
+
+.button_false {
+    background: initial;
+    display: flex;
+    border: none;
+    padding: 4px 10px;
+    margin-bottom: 8px;
+}
+
+.todo_header {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.todo_logo {
+    font-weight: 600;
+    font-size: 28px;
+    color: rgb(103, 102, 92);
+    font-family: 'Patua One';
+}
+.todo_body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo_filter {
+    width: 18%;
+    min-width: 170px;
+}
+
+.todo_colors {
+    padding: 0px;
+}
+
+.todo_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    align-items: normal;
+}
+
+.todo_block {
+    width: 49%;
+    background-color: rgb(254, 249, 225);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .todo_block {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .todo_body {
+        flex-direction: column;
+    }
+    .container {
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .todo_header {
+        height: 40px;
+    }
+    .todo {
+        padding-top: 35px;
+    }
+    ul {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .todo_filter {
+        width: 100%;
+    }
+    .todo_content {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .todo_colors{
+        flex-wrap: wrap ;
+    }
+}
+@media (max-width: 490px) {
+    .todo {
+        padding: 24px;
+    }
+}
+.todo_icon {
+    background: transparent;
+    font-size: 40px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    padding: 20px 0px;
+}
+.checkbox label,
+.hide_done label {
+    font-family: 'Patua One';
+    color: rgb(178, 178, 177);
+    font-size: 14px;
+    line-height: 170%;
+    margin-left: 6px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu {
+    background: transparent;
+    padding: 4px 2px  0px 6px;
+}
+
+.todo_change {
+    position: absolute;
+    right: 0px;
+    top: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    min-width: 140px;
+    border: 0.8px solid #cfcaca88;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.button_delete,
+.button_edit {
+    background: transparent;
+    padding: 10px 16px;
+}
+
+hr {
+    width: 100%;
+    border: 0.5px solid #dcdbdb58;
+}
+
+.girl{
+    height: 200px;
+    width: 200px;
+}
+.girl img{
+    width: 100%;
+    height: 100%;
+}
+
+.false{
+    display: none;
+}
+
+.button_true{
+    background: rgb(250, 249, 248);
+    border-radius: 10px;
+    display: flex;
+    border: none;
+    padding: 4px 10px;
+    margin-bottom: 8px;
+}
